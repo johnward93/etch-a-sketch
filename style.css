@@ -2,10 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 200px;
+    border: 1px solid black;
 }
 
 .square {
-    border: 1px solid black;
     width: 10px;
     height: 10px;
+}
+
+.square-hover {
+    background-color: black;
 }
