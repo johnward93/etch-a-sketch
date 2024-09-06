@@ -1,13 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #grid-container {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 50em;
+    height: 50em;
     border: 1px solid black;
 }
 
 .square {
-    width: 10px;
-    height: 10px;
+    width: calc(100% / var(--divs-per-row));
+    height: calc(100% / var(--divs-per-row));
 }
 
 .square-hover {
